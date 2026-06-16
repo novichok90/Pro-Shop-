@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header class="max-w-[1640px] m-auto">
+        <nav class="bg-[#0E0E0E] min-h-[100px] py-4 flex flex-col lg:flex-row justify-center gap-4 lg:gap-[50px] items-center px-4">
+            <img class="w-[132px] h-[58px]" src="./assets/logo (4).png" alt="">
+            <ul class="flex flex-wrap justify-center gap-[12px]">
+                <li class="text-[16px] leading-[100%] font-normal text-white uppercase">
+                    <a href="#" data-lang="nav_company">Компания</a>
+                </li>
+                <li class="text-[16px] leading-[100%] font-normal text-white uppercase">
+                    <a href="./index1.html" data-lang="nav_catalog">Каталог</a>
+                </li>
+                <li class="text-[16px] leading-[100%] font-normal text-white uppercase">
+                    <a href="#" data-lang="nav_services">Услуги</a>
+                </li>
+                <li class="text-[16px] leading-[100%] font-normal text-white uppercase">
+                    <a href="#" data-lang="nav_info">Информация</a>
+                </li>
+                <li class="text-[16px] leading-[100%] font-normal text-white uppercase">
+                    <a href="./index3.html" data-lang="nav_contacts">Контакты</a>
+                </li>
+            </ul>
+            <div class="flex flex-wrap gap-[15px] sm:gap-[23px] items-center justify-center">
+                <button id="toggle-mode" class="bg-[#1D1D1D] text-white border border-[#D42E12] rounded px-2 py-1 outline-none cursor-pointer text-[14px]">Dark mode</button>
+                <select id="languageSelect" onchange="changeLanguage()" class="bg-[#1D1D1D] text-white border border-[#D42E12] rounded px-2 py-1 outline-none cursor-pointer text-[14px]">
+                    <option value="ru">RU</option>
+                    <option value="uz">UZ</option>
+                    <option value="en">EN</option>
+                </select>
+
+                <button class="w-[168px] h-[40px] bg-black border-4 border-[#D42E12]">
+                    <a class="text-[12px] leading-[100%] font-bold text-white uppercase" href="#" data-lang="btn_call">Заказать звонок</a>
+                </button>
+                <div class="flex gap-[15px] items-center">
+                    <i class="fa-solid fa-magnifying-glass text-[24px] text-white"></i>
+                    <i class="fa-solid fa-cart-shopping text-[24px] text-[#C53720]"></i>
+                    <button class="w-[32px] h-[32px] rounded-full bg-[#C53720] text-white">2</button>
+                </div>
+            </div>
+        </nav>
+        <div class="relative flex flex-col justify-between" style="background-image: url(./assets/фон\ главного\ баннера4\ 1.png); background-position: center; background-size: cover; background-repeat: no-repeat; min-height: 620px; height: auto;">
+           <div class="flex flex-col md:flex-row justify-between items-center gap-[20px] md:gap-[50px] px-4 w-full">
+             <div class="ml-4 md:ml-[150px] lg:ml-[300px] pt-[80px] md:pt-[155px] px-4">
+                <h1 class="text-[28px] md:text-[36px] lg:text-[48px] leading-[110%] text-white font-bold tracking-[1px]" data-lang="hero_title">
+                    НАДЕЖНЫЕ,<br>КАЧЕСТВЕННЫЕ<br>АККУМУЛЯТОРЫ</h1>
+                <button class="w-[216px] h-[52px] border-4 border-[#C53720] mt-[30px] md:mt-[52px]">
+                    <span class="text-[14px] leading-[100%] text-white uppercase font-semibold" data-lang="btn_catalog">перейти в каталог</span>
+                </button>
+            </div>
+            <div class="mt-4 md:mt-[155px] mr-0 md:mr-10">
+                <img src="./assets/sub menu.png" alt="" class="max-w-full h-auto">
+            </div>
+           </div>
+        </div>
+    </header>
+    <main class="max-w-[1640px] m-auto">
+      <section class="mt-[15px]">
+            <div class="flex flex-wrap gap-[8px] sm:gap-[16px] items-center ml-4 md:ml-[150px] lg:ml-[300px] px-4">
+                <h2 class="text-[12px] leading-[100%] font-medium uppercase text-[#C53720]">главная</h2>
+                <i class="fa-solid fa-chevron-right text-[20px] text-[#C53720]"></i>
+                <h2 class="text-[12px] leading-[100%] font-medium uppercase text-[#1D1D1D]">каталог</h2>
+                <i class="fa-solid fa-chevron-right text-[20px] text-[#C53720]"></i>
+                <h2 class="text-[12px] leading-[100%] font-medium uppercase text-[#1D1D1D]">аккумуляторы</h2>
+                <i class="fa-solid fa-chevron-right text-[20px] text-[#C53720]"></i>
+                <h2 class="text-[12px] leading-[100%] font-medium uppercase text-[#1D1D1D]">MAGNUM - каталог АКБ от 60 до 230Ah</h2>
+                <i class="fa-solid fa-chevron-right text-[20px] text-[#C53720]"></i>
+                <h2 class="text-[12px] leading-[100%] font-medium uppercase text-[#1D1D1D]">Magnum 60 ah</h2>
+            </div>
+        </section>
+        <section class="bg-[#EDEDED] min-h-[1814px] h-auto pb-[40px] px-4">
+              <div class="max-w-[1088px] m-auto">
+                <h2 class="text-[24px] md:text-[30px] lg:text-[36px] leading-[120%] text-[#1D1D1D] font-bold uppercase pt-[40px] mb-[30px]">MAGNUM - КАТАЛОГ АКБ ОТ 60 ДО 230АН</h2>
+                    <div class="flex flex-col lg:flex-row gap-[24px] px-4 justify-center items-center lg:items-start">
+                        <div class="w-full lg:w-auto flex justify-center">
+                            <img src="./assets/Component 1.png" alt="" class="max-w-full">
+                        </div>
+                        <div class="w-full lg:w-auto flex justify-center">
+                            <img src="./assets/Карточка товара_Вид 5.png" alt="" class="max-w-full">
+                        </div>
+                    </div>
+                     <div class="flex justify-end pr-[42px] pb-[40px] mt-[20px]">
+                    <img src="./assets/Вверх вниз.png" alt="Scroll" class="cursor-pointer hover:opacity-80">
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer class="max-w-[1640px] m-auto bg-cover bg-center bg-no-repeat min-h-[342px] h-auto bg-black/80 flex flex-col md:flex-row flex-wrap justify-center md:justify-evenly items-start pt-[40px] md:pt-[74px] pb-10 gap-8 md:gap-4 mt-[80px] px-6" style="background-image: url(./assets/background\ image.png);">
+        <div class="w-full md:w-auto text-center md:text-left">
+            <img class="mx-auto md:mx-0" src="./assets/logo (4).png" alt="">
+            <h4 class="text-[16px] leading-[100%] pt-[48px] font-normal text-gray-400">© 2019 PRO Auto.<br>
+            Все права защищены.</h4>
+        </div>
+        <div class="w-full sm:w-[45%] md:w-auto text-center md:text-left">
+            <h5 class="text-[16px] leading-[100%] font-medium text-white uppercase">компания</h5>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[20px]">о компании</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">лицензии</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">партнеры</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">отзыви клиентов</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">реквизиты</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">вакансии</p>
+        </div>
+        <div class="w-full sm:w-[45%] md:w-auto text-center md:text-left">
+            <h5 class="text-[16px] leading-[100%] font-medium text-white uppercase">каталог</h5>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[20px]">аккумуляторы</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">автомасла</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">аксессуары</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">автохимия</p>
+        </div>
+        <div class="w-full sm:w-[45%] md:w-auto text-center md:text-left">
+            <h5 class="text-[16px] leading-[100%] font-medium text-white uppercase">услуги</h5>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[20px]">диагностика<br>аккумулятора</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[36px]">прием<br>аккумуляторов</p>
+        </div>
+        <div class="w-full sm:w-[45%] md:w-auto text-center md:text-left">
+            <h5 class="text-[16px] leading-[100%] font-medium text-white uppercase">информация</h5>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[20px]">акции</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">новости</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">статьи</p>
+            <p class="text-[12px] leading-[100%] text-gray-400 font-normal uppercase pt-[16px]">вопрос - ответ</p>
+        </div>
+        <div class="w-full md:w-auto flex flex-col items-center md:items-start text-center md:text-left">
+            <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-phone text-[20px] text-[#C53720]"></i>
+                <p class="text-[16px] leading-[100%] text-white font-medium">+7 (342) 279-36-13</p>
+            </div>
+            <div class="pt-[12px] flex gap-2 items-center">
+                <i class="fa-solid fa-envelope text-[20px] text-[#C53720]"></i>
+                <p class="text-[16px] leading-[100%] text-white font-medium">proauto59@yandex.ru</p>
+            </div>
+            <button class="w-[176px] h-[40px] bg-none border-4 border-[#D42E12] mt-[20px]">
+                <span class="text-[12px] leading-[100%] font-bold text-white uppercase">Заказать звонок</span>
+            </button>
+        </div>
+    </footer>
+    <script src="./translate.js"></script>
+</body>
+</html>
